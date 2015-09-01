@@ -1,0 +1,24 @@
+﻿@{ 
+    var maxNumberofDaysBeforeKilling = 365;
+    var showThis = true;
+}
+
+<h1>Anna</h1> 
+Number of DaysBefore Killing Enemy:
+
+<select>
+    name ="theOPtion";
+    @for (var i = 0; i <= maxNumberofDaysBeforeKilling; i++)
+    {
+        <option value="@i">@i</option>
+        }
+    </select>
+
+@if(showThis == true)
+{
+        <p>This is visible.</p>
+}
+
+@{ 
+
+}
